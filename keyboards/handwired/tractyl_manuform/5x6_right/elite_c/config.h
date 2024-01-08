@@ -18,9 +18,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#define AUDIO_PIN       C6
-
-#define EE_HANDS
+#define MASTER_LEFT
 
 /* PMW33XX Settings */
-#define PMW33XX_CS_PIN B6
+#define PMW33XX_CS_PIN B7
+#define PMW33XX_LIFTOFF_DISTANCE 0x08
+#undef ROTATIONAL_TRANSFORM_ANGLE
+#define ROTATIONAL_TRANSFORM_ANGLE 90 
